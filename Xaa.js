@@ -333,13 +333,12 @@ console.log(chalk.magenta(`⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⢀⡤⠤⠤⠤⢤⣀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣀⣀⣀⣤⣤⣀
 ⣶⣿⣯⣭⣽⣿⣿⣿⣷⣶⣤⣄⡀⢀⣤⣾⣿⣿⣿⣯⣭⣿⣿
 ⠘⠿⠿⠛⠉⠉⠉⠛⠛⠿⣿⣿⣿⠿⠛⠋⠉⠉⠉⠉⠉⠙⠋
-𝔇𝔢𝔰𝔱𝔯𝔬𝔶 𝔱𝔥𝔢 𝔫𝔬𝔯𝔪. 𝔅𝔢𝔠𝔬𝔪𝔢 𝔲𝔫𝔯𝔢𝔞𝔩.⠀⠀⠀
 `));
 
 bot.launch();
 console.log(chalk.red(`
 ╔══════════════════════════════════════╗
-║   ${chalk.bgBlackBright.bold(' X7i - System Aktif  ')}.  ║
+║   ${chalk.bgBlackBright.bold(' SP - System Aktif  ')}.  ║
 ╠══════════════════════════════════════╣
 ║   ${chalk.cyanBright('ID OWNER')}   : ${chalk.yellowBright(OwnerId)}        
 ║   ${chalk.magentaBright('STATUS')}     : ${chalk.greenBright('BOT CONNECTED ✅')} 
@@ -356,7 +355,7 @@ bot.start((ctx) => {
   const name = ctx.from.first_name || "User";
 
   const message = `
-👾 *Welcome to X7i Settings!*
+👾 *Welcome to SP Settings!*
 
 🛡️ SYSTEM COMMAND ACCESS 🛡️
 
@@ -381,7 +380,7 @@ Power is yours to command._
     reply_markup: {
       inline_keyboard: [
         [
-          { text: "Contact Admin", url: "https://t.me/WhyBro666" }
+          { text: "Contact Admin", url: "https://t.me/DryzxModdeds" }
         ]
       ]
     }
@@ -3306,8 +3305,8 @@ const executionPage = (
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>X7i - Panel</title>
-  <link rel="icon" href="https://files.catbox.moe/nv8rrj.jpg" type="image/jpg">
+  <title>SP - Panel</title>
+  <link rel="icon" href="https://i.postimg.cc/JhPrGZXB/Proyek-Baru-41-A2-BDBE8.png" type="image/jpg">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -3453,7 +3452,7 @@ const executionPage = (
   <!-- KOTAK BARU -->
   <div class="box">
     <div class="icon" style="text-align: center; margin-bottom: 15px;">
-      <img src="https://files.catbox.moe/nv8rrj.jpg" class="logo" alt="Overload-X Logo">
+      <img src="https://i.postimg.cc/JhPrGZXB/Proyek-Baru-41-A2-BDBE8.png" class="logo" alt="Overload-X Logo">
     </div>
     <div class="username">Welcome, ${username || 'Anonymous'}</div>
     <div class="connected">CONNECTED</div>
@@ -3462,9 +3461,9 @@ const executionPage = (
 
   <div class="box">
     <div class="buttons-grid">
-      <button class="mode-btn" data-mode="androdelay2"><i class="fa fa-bug"></i> X7i - KILL UI</button>
-      <button class="mode-btn" data-mode="androdelay"><i class="fa fa-bug"></i> X7i - CRASH HARD</button>
-      <button class="mode-btn full" data-mode="iosfc"><i class="fa fa-bug"></i> X7i - KILL IOS</button>
+      <button class="mode-btn" data-mode="androdelay2"><i class="fa fa-bug"></i> SP - KILL UI</button>
+      <button class="mode-btn" data-mode="androdelay"><i class="fa fa-bug"></i> SP - CRASH HARD</button>
+      <button class="mode-btn full" data-mode="iosfc"><i class="fa fa-bug"></i> SP - KILL IOS</button>
     </div>
     <button class="execute-button" id="executeBtn" disabled><i class="fas fa-rocket"></i> ATTACK!!</button>
   </div>
@@ -3474,7 +3473,7 @@ const executionPage = (
       ${userInfo.role === "owner" || userInfo.role === "reseller" || userInfo.role === "admin" ? `
         <div class="footer-button"><a href="/userlist"><i class="fas fa-users-cog"></i> Manage User</a></div>
       ` : ""}
-      <div class="footer-button"><a href="https://t.me/WhyBro666" target="_blank"><i class="fab fa-telegram"></i> Developer</a></div>
+      <div class="footer-button"><a href="https://t.me/DryzxModdeds" target="_blank"><i class="fab fa-telegram"></i> Developer</a></div>
       <div class="footer-button"><a href="/logout"><i class="fas fa-sign-out-alt"></i> Logout</a></div>
       <div class="footer-button"><i class="fas fa-user"></i> ${username || 'Unknown'} &nbsp;|&nbsp; <i class="fas fa-hourglass-half"></i> ${formattedTime}</div>
     </div>
@@ -3591,7 +3590,7 @@ app.get("/", (req, res) => {
   }
 
   // Jika belum login / expired, arahkan ke halaman login awal
-  const filePath = path.join(__dirname, "SH-System", "index.html");
+  const filePath = path.join(__dirname, "SP-System", "index.html");
   fs.readFile(filePath, "utf8", (err, html) => {
     if (err) return res.status(500).send("❌ Gagal baca Login.html");
     res.send(html);
@@ -3608,7 +3607,7 @@ app.get("/login", (req, res) => {
     return res.redirect("/execution");
   }
 
-  const filePath = path.join(__dirname, "SH-System", "Login.html");
+  const filePath = path.join(__dirname, "SP-System", "Login.html");
   fs.readFile(filePath, "utf8", (err, html) => {
     if (err) return res.status(500).send("❌ Gagal baca file Login.html");
     res.send(html);
